@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0ECE7"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/australia" />
+
+            <TextView
+                android:id="@+id/text_view_score_aus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="/"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/text_view_wicket_aus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text=","
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/text_view_over_aus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Overs"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="0"
+                android:text="0"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="1"
+                android:text="1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="2"
+                android:text="2"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="3"
+                android:text="3"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="4"
+                android:text="4"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="6"
+                android:text="6"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#922B21"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="NB"
+                android:text="NB"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#5B2C6F"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="W"
+                android:text="W"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#0E6655"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="Wic"
+                android:text="Wic"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#873600"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperAus"
+                android:tag="Ov"
+                android:text="Ov"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/india" />
+
+            <TextView
+                android:id="@+id/text_view_score_ind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="/"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/text_view_wicket_ind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text=","
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/text_view_over_ind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Overs"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="0"
+                android:text="0"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="1"
+                android:text="1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="2"
+                android:text="2"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="3"
+                android:text="3"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="4"
+                android:text="4"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="6"
+                android:text="6"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#922B21"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="NB"
+                android:text="NB"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#5B2C6F"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="W"
+                android:text="W"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#0E6655"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="Wic"
+                android:text="Wic"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#873600"
+                android:fontFamily="sans-serif"
+                android:onClick="scoreKeeperInd"
+                android:tag="Ov"
+                android:text="Ov"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"></View>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#C0392B"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:onClick="resetButtonClick"/>
+
+</LinearLayout>
